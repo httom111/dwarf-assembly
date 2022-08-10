@@ -1,5 +1,5 @@
 CXX=g++
-CXXLOCS?=-L. -I.
+CXXLOCS?=-L. -I. -I/usr/local/src/libdwarfpp/include/ -I/usr/local/src/libdwarfpp/contrib/libsrk31c++/include -I/usr/local/src/libdwarfpp/contrib/libc++fileno/ -L/usr/local/src/libdwarfpp/lib/ -L/usr/local/src/libdwarfpp/contrib/libsrk31c++/lib/ -L/usr/local/src/libdwarfpp/contrib/libc++fileno/lib/
 CXXFL?=
 CXXFLAGS=$(CXXLOCS) -Wall -Wextra -std=c++14 -O2 -g $(CXXFL)
 CXXLIBS=-ldwarf -ldwarfpp -lsrk31c++ -lc++fileno -lelf
